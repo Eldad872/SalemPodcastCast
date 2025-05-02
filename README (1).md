@@ -1,32 +1,99 @@
-# Hi there, I'm Eldad! 👋
+ Salem International Christian Center Podcast App
 
-Welcome to my GitHub profile! I'm passionate about technology, coding, and solving challenging problems. Here's a little about me:
+A modern web application for Salem International Christian Center to share sermons, live stream services, and connect with their congregation.
 
-## 🌟 About Me
-- 🔭 I’m currently working on improving my skills in **[insert technologies here, e.g., AI/ML, web development, etc.]**.
-- 🌱 I’m always learning something new, currently focusing on **[insert your focus area, e.g., TypeScript, Kubernetes, etc.]**.
-- 👯 I’m looking to collaborate on **open source projects** that make an impact.
-- 💬 Ask me about **[your expertise or interests, e.g., Python, DevOps, etc.]**.
-- ⚡ Fun fact: **[Add a fun fact about yourself!]**
+## Features
 
-## 🛠️ Tech Stack
-- Languages: [List of programming languages you use, e.g., Python, JavaScript, etc.]
-- Frameworks: [List of frameworks you are proficient in, e.g., React, Flask, etc.]
-- Tools: [List of tools you use, e.g., Git, Docker, etc.]
-- Cloud: [Mention cloud services you work with, e.g., AWS, Azure, etc.]
+### For Listeners
+- **Sermon Library**: Browse, search, and filter through sermon recordings by topic, preacher, or date
+- **Live Streaming**: Watch live church services with real-time streaming
+- **Favorites**: Save sermons to a personal favorites list for easy access
+- **Downloads**: Download sermons for offline listening
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices
 
-## 📈 GitHub Stats
-![Eldad's GitHub stats](https://github-readme-stats.vercel.app/api?username=Eldad872&show_icons=true&theme=radical)
+### For Administrators
+- **Sermon Management**: Upload, edit, and manage sermon recordings
+- **Live Event Control**: Schedule and manage live streaming events
+- **Customization**: Update church branding with custom logo and colors
+- **Analytics**: Track sermon popularity and download statistics
 
-## 🌐 Connect with Me
-- 📫 Reach me at: **[eldadknkrumah0546613601@gmail.com]**
-- 💼 LinkedIn: [Your LinkedIn profile link]
-- 🐦 Twitter: [Your Twitter handle or link]
+## Technical Implementation
 
-## 🎯 Goals
-- Short Term: **[Your short-term goals, e.g., contribute to 5 open-source projects this year]**
-- Long Term: **[Your long-term goals, e.g., become a cloud architect]**
+This application is built with a modern tech stack:
 
----
+- **Frontend**: React with TypeScript, TailwindCSS
+- **UI Components**: shadcn/ui component system
+- **State Management**: React Query for server state
+- **Routing**: Wouter for lightweight routing
+- **Storage**: Client-side storage for preferences, in-memory storage for server-side data
 
-Thanks for visiting my profile! 😊
+## Getting Started
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+### Building for Production
+
+```
+npm run build
+```
+
+## Usage Guide
+
+### Uploading Sermons
+
+1. Navigate to the Admin dashboard
+2. Select the "Sermons" tab
+3. Click "Upload Sermon"
+4. Fill in the sermon details (title, preacher, date, etc.)
+5. Upload the audio file and optional thumbnail
+6. Click "Upload" to add the sermon to the library
+
+### Creating Live Events
+
+1. Navigate to the Admin dashboard
+2. Select the "Live Events" tab
+3. Click "Create Live Event"
+4. Fill in the event details (title, description, scheduled time, etc.)
+5. Add a streaming URL when the event is ready to go live
+6. Toggle the "Live" status when the event begins streaming
+
+### Customizing Church Branding
+
+1. Navigate to the Admin dashboard
+2. Select the "Customization" tab
+3. Click "Customize Church Logo"
+4. Upload your church logo (recommended size: 200x200px)
+5. Preview the changes and save them
+
+## Project Structure
+
+- `/client`: Frontend React application
+  - `/src`: Source code
+    - `/assets`: Images and icons
+    - `/components`: Reusable UI components
+    - `/hooks`: Custom React hooks
+    - `/lib`: Utility functions and services
+    - `/pages`: Page components for different routes
+- `/server`: Backend Express server
+  - `/routes.ts`: API endpoints
+  - `/storage.ts`: Data storage implementation
+- `/shared`: Shared code between client and server
+  - `/schema.ts`: Data schemas and types
+
+## License
+
+This project is proprietary software for Salem International Christian Center.
+
+## Support
+
+For support or feature requests, please contact the development team.
